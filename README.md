@@ -120,10 +120,10 @@ Trim potentiometer R 500
 <img src="Images/Trim potentiometer.jpg" alt="drawing" width="200"/>
 
 Resistors
-1 x 47hm (option for leds)
+- 1 x 47hm (option for leds)
 
 Capacitors
-1 x 1000u
+- 1 x 1000u
 
 2 x 5mm Warm White led (option)
 
