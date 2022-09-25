@@ -28,7 +28,7 @@ Multiple colored silicon cables AWG 24 and 28
 
 <img src="Images/AABCOOLING super silent fan 5.jpg" alt="drawing" width="200"/>
 
-<img src="Images/Fan spec.jpg" alt="drawing" width="200"/>
+<img src="Images/Fan spec.jpg" alt="drawing" width="500"/>
 
 Fan pinout pinout
 - 12V = Red
@@ -50,7 +50,7 @@ Dallas DS18B20 temperature sensor
 
 1 x BC549 NPN transistor (option for leds)
 
-<img src="Images/Mini360 DC- DC buck converter.jpg" alt="drawing" width="200"/>
+<img src="Images/BC549.jpg" alt="drawing" width="200"/>
 
 Heatsink TO220
 
@@ -80,7 +80,7 @@ Resistors
 - 1 x 4k7
 
 Capacitors
-1 x 1000u
+- 1 x 1000u
 
 2 x 5mm Warm White led (option)
 
@@ -97,7 +97,7 @@ Capacitors
 #### Slave module
 3 x Fan AABCOOLING Super Silent Fan 5
 
-<img src="Images/AABCOOLING Super Silent Fan 5.jpg" alt="drawing" width="200"/>
+<img src="Images/AABCOOLING super silent fan 5.jpg" alt="drawing" width="200"/>
 
 1 x BD139 NPN transistor
 
@@ -105,7 +105,7 @@ Capacitors
 
 1 x BC549 NPN transistor (option for leds)
 
-<img src="Images/Mini360 DC- DC buck converter.jpg" alt="drawing" width="200"/>
+<img src="Images/BC549.jpg" alt="drawing" width="200"/>
 
 Heatsink TO220
 
