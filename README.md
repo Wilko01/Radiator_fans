@@ -26,27 +26,27 @@ Multiple colored silicon cables AWG 24 and 28
 #### Master module
 3 x Fan AABCOOLING Super Silent Fan 5
 
-<img src="Images/AABCOOLING Super Silent Fan 5.jpg" alt="drawing" width="200"/>
+<img src="Images/AABCOOLING super silent fan 5.jpg" alt="drawing" width="200"/>
 
 <img src="Images/Fan spec.jpg" alt="drawing" width="200"/>
 
 Fan pinout pinout
-12V = Red
-GND = Black
-RPM = Yellow
+- 12V = Red
+- GND = Black
+- RPM = Yellow
 
 1 x ESP32
 
-<img src="Images/ESP32-Wroom-32U.jpg" alt="drawing" width="400"/>
+<img src="Images/ESP32-Wroom-32U.jpg" alt="drawing" width="200"/>
 
 
-Dallas DS18B20
+Dallas DS18B20 temperature sensor
 
 <img src="Images/Dallas DS18B20.jpg" alt="drawing" width="200"/>
 
 1 x BD139 NPN transistor
 
-<img src="Images/Mini360 DC- DC buck converter.jpg" alt="drawing" width="200"/>
+<img src="Images/BD139.jpg" alt="drawing" width="200"/>
 
 1 x BC549 NPN transistor (option for leds)
 
@@ -54,7 +54,7 @@ Dallas DS18B20
 
 Heatsink TO220
 
-<img src="Images/Heatsink.jpg" alt="drawing" width="200"/>
+<img src="Images/heatsink.jpg" alt="drawing" width="200"/>
 
 1 x Mini360 DC- DC buck converter
 
@@ -73,11 +73,11 @@ Trim potentiometer R 500
 <img src="Images/Trim potentiometer.jpg" alt="drawing" width="200"/>
 
 Resistors
-1 x 47hm (option for leds)
-1 x 150
-2 x 1k
-1 x 1k (option for leds)
-1 x 4k7
+- 1 x 47hm (option for leds)
+- 1 x 150
+- 2 x 1k
+- 1 x 1k (option for leds)
+- 1 x 4k7
 
 Capacitors
 1 x 1000u
@@ -87,6 +87,7 @@ Capacitors
 1 x 12V DC adapter
 
 1 x 5 pin JST male - female connector
+
 <img src="Images/jst5.jpg" alt="drawing" width="200"/>
 
 1 x 5.5 x 2.1 Female DC power plug
@@ -100,11 +101,15 @@ Capacitors
 
 1 x BD139 NPN transistor
 
-<img src="Images/Mini360 DC- DC buck converter.jpg" alt="drawing" width="200"/>
+<img src="Images/BD139.jpg" alt="drawing" width="200"/>
 
 1 x BC549 NPN transistor (option for leds)
 
 <img src="Images/Mini360 DC- DC buck converter.jpg" alt="drawing" width="200"/>
+
+Heatsink TO220
+
+<img src="Images/heatsink.jpg" alt="drawing" width="200"/>
 
 PCB 2 x 8 Used to connect the JST to and to mount the transistor(s)
 
@@ -123,6 +128,7 @@ Capacitors
 2 x 5mm Warm White led (option)
 
 2 x 5 pin JST male - female connector
+
 <img src="Images/jst5.jpg" alt="drawing" width="200"/>
 
 
