@@ -17,6 +17,8 @@ Calculation of the resistor to connect the BD139 to the ESP32
 	Selected 150 Ohm as I have that in stock
 Measuring the RPM via the ESP32 is okay till the voltage drops below 10V as the RPM signal then becomes too weak. When the RPM is measured then it also consumes power and the fan will earlier stop to spin then the other fans which are connected when the voltage is lowered.
 The fan that I use is a more expensive one. It is quite, has a high airflow with low current and a high 100.000 hours estimated runtime. Comparing it to a € 1,5 fan, the cheap fan is way less quite, do have a higher airflow, which I doubt if it is needed and uses twice the amount of current. With the calculation that I made the more expensive fan will become equal after 2 years while the fan then for the remainder of its lifetime consumes less power.
+Use a 1k resistor behind RPM. If not then the other fans keep spinning when off.
+Power lines red and black are 24AWG, Rest is 28AWG. Cables to connect the modules are 24AWG as that is easier to connect the (Dupont) JST pins to.
 
 
 ### Parts
