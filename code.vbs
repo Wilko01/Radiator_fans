@@ -112,7 +112,6 @@ time:
                   if (((temp_measured) >=25) && ((temp_measured) < 27))
                   {
                     id(dac_output_fans).set_level(0.25);
-                    //id(dac_output_fans).publish_state(0.25); publish werkt niet
                   }
                   else
                   {
