@@ -1,6 +1,11 @@
 # Radiator fan controlled
 The radiator fan is used to control the airflow of the radiators to be able to heat the house via low temperatures.
 
+Pictures of the parts
+
+<img src="Images/AABCOOLING super silent fan 5.jpg" alt="drawing" width="200"/>
+
+
 ## Description and operation instructions
 The fans are turned on when a certain temperature of the radiator is detected and turned off when it is below another temperature value. The fans are controlled via different levels where at lower temperature levels the fan runs at a lower speed and when the temperature level is high the fan runs at a higher speed. The logic is running on the ESP32. To be able to override the logic there is an override variable which enables remote control and bypasing the ESP32 fan control. 
 The fans are modular build where the first unit is the master which has 3 fans and the micro controller ESP32. It can be extended with a number of modules which act as slaves. Each module contains 3 fans. Tested with a maximum of 4 modules. 1 master and 3 slaves.
@@ -144,4 +149,8 @@ Capacitors
 ### ESPHome Configuration in Home Assistant
 Create a new ESPHOME device with this code:
 ### Code
+[Code in ESPHOME](code.vbs)
+
+
+### 3D printer files
 [Code in ESPHOME](code.vbs)
