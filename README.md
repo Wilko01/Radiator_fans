@@ -86,14 +86,24 @@ Resistors
 - 1 x 1k (option for leds)
 - 1 x 4k7
 
-Capacitors
-- 1 x 1000u
+- 1 x 1000u capacitor
 
 2 x 5mm Warm White led (option)
 
-1 x 12V DC adapter
+Magnets
+- 12 x 6 mm
 
-1 x 5 pin JST male - female connector
+<img src="Images/Magnet 12x6mm.jpg" alt="drawing" width="200"/>
+
+- 8 x 4 mm
+
+<img src="Images/Magnet 8x4mm.jpg" alt="drawing" width="200"/>
+
+- screw M2x8mm
+
+- 1 x 12V DC adapter
+
+- 1 x 5 pin JST male - female connector
 
 <img src="Images/jst5.jpg" alt="drawing" width="200"/>
 
@@ -122,22 +132,27 @@ PCB 2 x 8 Used to connect the JST to and to mount the transistor(s)
 
 <img src="Images/PCB 2 x 8.jpg" alt="drawing" width="200"/>
 
-Trim potentiometer R 500 
+Trim potentiometer R 500 Ohm W501
 
 <img src="Images/Trim potentiometer.jpg" alt="drawing" width="200"/>
 
-Resistors
-- 1 x 47hm (option for leds)
+- 1 x 47hm Resistor (option for leds)
 
-Capacitors
-- 1 x 1000u
+- 1 x 1000u capacitor
 
-2 x 5mm Warm White led (option)
+- 2 x 5mm Warm White led (option)
 
-2 x 5 pin JST male - female connector
+- 2 x 5 pin JST male - female connector
 
 <img src="Images/jst5.jpg" alt="drawing" width="200"/>
 
+Magnets
+- 12 x 6 mm
+
+<img src="Images/Magnet 12x6mm.jpg" alt="drawing" width="200"/>
+
+Screw
+- M2x8mm
 
 ### Schematic overview
 <img src="Images/Schematic_overview.jpg" alt="drawing" width="700"/>
