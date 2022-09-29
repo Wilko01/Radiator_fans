@@ -11,7 +11,7 @@ The fans are turned on when a certain temperature of the radiator is detected an
 The fans are modular build where the first unit is the master which has 3 fans and the micro controller ESP32. It can be extended with a number of modules which act as slaves. Each module contains 3 fans. Tested with a maximum of 4 modules. 1 master and 3 slaves.
 
  ## Technical description
-The ESP32 provides an analogue value which is fed into a transistor. The transistor amplifies the voltage and is typically operating between 5V and 12V. Lower than 5V will stop fans as they are not PWM fans. The ESP32 is running ESPHOME and connected to Home Assistant. The sensor for the temperature is included in the master module. Slaves will get the analogue value from the master and amplified it via the transistor. A trim potential meter is used to tune the master and slave modules as there are voltage losses when connecting multiple modules. By tuning the speed of all fans of all modules can be aligned.
+The ESP32 provides an analogue value which is fed into a transistor. The transistor amplifies the voltage and is typically operating between 5V and 12V. Lower than 5V will stop fans as they are not PWM fans. The ESP32 is running ESPHOME and connected to Home Assistant. The sensor for the temperature is included in the master module. Slaves will get the analogue value from the master and amplified it via the transistor. A trim potential meter is used to tune the master and slave modules as there are voltage losses when connecting multiple modules. By tuning the speed of all fans of all modules can be aligned. Best is to set the 500Ohm potential meter to 250Ohm before soldering it in. This provides space to tweak. When all modules are connected to the master, spin the fans and connect a scope with multiple channels if you have one and tune the voltages via the potential meters so they are almost the same in the upper and lower speeds of the fans. If you don't have a scope, then use preferrably multiple multimeters to measure the voltages and tune. It is also possible to use one multimeter, but you need to measure, tune and measure the other modules one by one.
 The master with its slaves run independent of Home Assistant, but could be overwritten by an override variable.
 The ESP32-wroom-32U was chosen as it has an external antenne which can be brought to the front of the radiator to receive a better wifi signal.
 Calculation of the resistor to connect the BD139 to the ESP32
@@ -25,6 +25,7 @@ The fan that I use is a more expensive one. It is quite, has a high airflow with
 Use a 1k resistor behind RPM. If not then the other fans keep spinning when off.
 Power lines red and black are 24AWG, Rest is 28AWG. Cables to connect the modules are 24AWG as that is easier to connect the (Dupont) JST pins to.
 
+The code can be found at the end of this page. Specifics like the modification of the temperature sensor address are described at the code block.
 
 ### Parts
 
@@ -99,7 +100,9 @@ Magnets
 
 <img src="Images/Magnet 8x4mm.jpg" alt="drawing" width="200"/>
 
-- screw M2x8mm
+- 1 x screw M2x8mm
+
+- 4 x screw M2x6mm
 
 - 1 x 12V DC adapter
 
@@ -151,8 +154,9 @@ Magnets
 
 <img src="Images/Magnet 12x6mm.jpg" alt="drawing" width="200"/>
 
-Screw
-- M2x8mm
+- 1 x screw M2x8mm
+
+- 2 x screw M2x6mm
 
 ### Schematic overview
 <img src="Images/Schematic_overview.jpg" alt="drawing" width="700"/>
@@ -164,8 +168,8 @@ Screw
 ### ESPHome Configuration in Home Assistant
 Create a new ESPHOME device with this code:
 ### Code
-[Code in ESPHOME](code.vbs)
-
+[Code in ESPHOME](code radiator-huiskamer-voor.vbs)
+Boot the ESP with the Dalles temperature sensor connected. This will show in the log at boot time the address of the connected Dallas sensor. Copy it and update the code with the retrieved address.
 
 ### 3D printer files
 [Code in ESPHOME](code.vbs)
