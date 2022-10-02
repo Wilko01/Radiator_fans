@@ -73,7 +73,7 @@ sensor:
 light:
   - platform: monochromatic
     output: pwm_output_leds
-    name: "Radiator huiskamer LEDs"
+    name: "Radiator huiskamer voor LEDs"
 
 
 #Get value from Helper in Home Assistant

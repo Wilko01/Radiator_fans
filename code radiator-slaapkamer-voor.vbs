@@ -60,6 +60,7 @@ sensor:
   - platform: pulse_counter
     pin: GPIO27
     name: "Radiator slaapkamer voor - RPM"
+    id: rpm
     update_interval: 10s
     unit_of_measurement: 'RPM'
     filters:
