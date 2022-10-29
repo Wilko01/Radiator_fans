@@ -1,5 +1,5 @@
 esphome:
-  name: radiator-huiskamer-voor
+  name: radiator-kleine-kamer
   on_boot:
     priority: -100 #lowest priority so start last
     then:
@@ -16,7 +16,7 @@ logger:
 api:
 
 ota:
-  password: "c659c88218892afdcfbbf393b0457bd9"
+  password: "10ac91d4f34292d4fbfc8861dfec58c1"
 
 wifi:
   ssid: !secret wifi_ssid
@@ -24,8 +24,8 @@ wifi:
 
   # Enable fallback hotspot (captive portal) in case wifi connection fails
   ap:
-    ssid: "Radiator-Huiskamer-Voor"
-    password: "NnoehsEWvBp8"
+    ssid: "Radiator-Kleine-Kamer"
+    password: "ubCTrrSRxYI1"
 
 captive_portal:
 
@@ -46,7 +46,7 @@ output:
 fan:
   - platform: speed
     output: dac_output_fans
-    name: "Radiator huiskamer voor - Fan"
+    name: "Radiator kleine kamer - Fan"
 
 #https://esphome.io/components/sensor/dallas.html?highlight=dallas
 #Get the temperature via the Dallas temp sensor
@@ -57,8 +57,8 @@ dallas:
 #Get the RPM of one fan
 sensor:
   - platform: pulse_counter
-    pin: GPIO34 #other ADC is broken, hence used the second ADC and another pin than the others as the others have pin 27
-    name: "Radiator huiskamer voor - RPM"
+    pin: GPIO27
+    name: "Radiator kleine kamer - RPM"
     update_interval: 10s
     unit_of_measurement: 'RPM'
     filters:
@@ -66,14 +66,14 @@ sensor:
 
    
   - platform: dallas
-    address: 0x980317331815ff28 #at first boot disable this code to retrieve the address and adjust it
-    name: "Radiator huiskamer voor - Temperature"
+    address: 0x8c0000001efcfd28 #at first boot disable this code to retrieve the address and adjust it
+    name: "Radiator kleine kamer - Temperature"
     id: th12_temp
     
 light:
   - platform: monochromatic
     output: pwm_output_leds
-    name: "Radiator huiskamer voor LEDs"
+    name: "Radiator kleine kamer LEDs"
 
 
 #Get value from Helper in Home Assistant
@@ -81,7 +81,7 @@ light:
 binary_sensor:
   - platform: homeassistant
     id: override_from_home_assistant_helper
-    entity_id: input_boolean.radiator_huiskamer_voor_override
+    entity_id: input_boolean.radiator_kleine_kamer_override
 
 
 #logic:
