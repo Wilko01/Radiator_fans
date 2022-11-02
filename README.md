@@ -31,15 +31,18 @@ The code can be found at the end of this page. Specifics like the modification o
 When all modules are connected to the master, spin the fans and connect a scope with multiple channels if you have one with the positive of the scope to the 12V and the negative to the negative side of the capacitor which is parallel to the fans. Tune the voltages via the potential meters so they are almost the same in the upper and lower speeds of the fans. If you don't have a scope, then use preferrably multiple multimeters to measure the voltages and tune. It is also possible to use one multimeter, but you need to measure, tune and measure the other modules one by one.
 
 Calibrate fans at min speed. Blue spikes in the background idicate that the scope signals are laying on top of eachother.
-<img src="Images/Calibrate fans at min speed.jpg" alt="drawing" width="200"/>
+
+<img src="Images/Calibrate fans at min speed.jpg" alt="drawing" width="400"/>
 
 
 Calibrate fans at max speed. Blue spikes in the background idicate that the scope signals are laying on top of eachother.
-<img src="Images/Calibrate fans at max speed.jpg" alt="drawing" width="200"/>
+
+<img src="Images/Calibrate fans at max speed.jpg" alt="drawing" width="400"/>
 
 
 Calibrate fans where the signals are slightly misaligned.
-<img src="Images/Calibrate fans slightly misaligned.jpg" alt="drawing" width="200"/>
+
+<img src="Images/Calibrate fans slightly misaligned.jpg" alt="drawing" width="400"/>
 
 ### Parts
 
