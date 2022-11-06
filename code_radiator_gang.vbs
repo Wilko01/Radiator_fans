@@ -16,7 +16,7 @@ logger:
 api:
 
 ota:
-  password: "04c2045637334d46a6778dbe4d0d45a7"
+  password: "9996f479bd3ef966ec8f5c424b7aef74"
 
 wifi:
   ssid: !secret wifi_ssid
@@ -24,8 +24,8 @@ wifi:
 
   # Enable fallback hotspot (captive portal) in case wifi connection fails
   ap:
-    ssid: "Radiator-gang"
-    password: "YSxGVipJyzHU"
+    ssid: "Radiator-Gang Fallback Hotspot"
+    password: "BwiUiI7PaqYk"
 
 captive_portal:
     
@@ -68,7 +68,7 @@ sensor:
 
    
   - platform: dallas
-    address: 0x820000001b702528 #at first boot disable this code to retrieve the address and adjust it
+    address: 0x4c0000001e394c28 #at first boot disable this code to retrieve the address and adjust it
     name: "Radiator gang - Temperature"
     id: th12_temp
     
