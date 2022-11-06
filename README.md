@@ -195,6 +195,9 @@ As I have multipe radiators where some have different sizes I used the naming co
 ### Code per radiator
 The code of each radiator is the same except the name of the radiator
 [Code in ESPHOME](code_radiator_huiskamer_voor.vbs)
+
 [Code in ESPHOME](code_radiator_kleine_kamer.vbs)
+
 [Code in ESPHOME](code_radiator_slaapkamer_voor.vbs)
+
 [Code in ESPHOME](code_radiator_gang.vbs)
