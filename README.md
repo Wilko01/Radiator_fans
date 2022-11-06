@@ -193,7 +193,8 @@ Boot the ESP with the Dalles temperature sensor connected. This will show in the
 As I have multipe radiators where some have different sizes I used the naming convention of the 3D files of the room(s). I made the files in Sketchup make and added this file as well.
 
 ### Code per radiator
-The code of each radiator is the same except the name of the radiator
+The code of each radiator is the same except the name of the radiator. So just pick any of these files and adjust the name to reflect your situation.
+
 [Code in ESPHOME](code_radiator_huiskamer_voor.vbs)
 
 [Code in ESPHOME](code_radiator_kleine_kamer.vbs)
