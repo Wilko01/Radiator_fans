@@ -189,4 +189,8 @@ Create a new ESPHOME device with this code:
 Boot the ESP with the Dalles temperature sensor connected. This will show in the log at boot time the address of the connected Dallas sensor. Copy it and update the code with the retrieved address.
 
 ### 3D printer files
+[3D Printer files](3D_Printer_Files)
+
+
+### Code per radiator
 [Code in ESPHOME](code.vbs)
