@@ -190,7 +190,8 @@ Boot the ESP with the Dalles temperature sensor connected. This will show in the
 
 ### 3D printer files
 [3D Printer files](3D_Printer_Files)
-
+As I have multipe radiators where some have different sizes I used the naming convention of the 3D files of the room(s). I made the files in Sketchup make and added this file as well.
 
 ### Code per radiator
-[Code in ESPHOME](code.vbs)
+The code of each radiator is the same except the name of the radiator
+[Code in ESPHOME](code radiator-huiskamer-voor.vbs)
