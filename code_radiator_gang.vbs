@@ -83,7 +83,7 @@ light:
 binary_sensor:
   - platform: homeassistant
     id: override_from_home_assistant_helper
-    entity_id: input_boolean.radiator_slaapkamer_voor_override
+    entity_id: input_boolean.radiator_gang_override
 
 
 #logic:
