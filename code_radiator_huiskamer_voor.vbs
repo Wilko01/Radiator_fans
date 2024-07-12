@@ -16,6 +16,7 @@ logger:
 api:
 
 ota:
+  platform: esphome
   password: "c659c88218892afdcfbbf393b0457bd9"
 
 wifi:
@@ -105,17 +106,17 @@ time:
               {
                 if ((temp_measured) >= 28)
                 {
-                 id(dac_output_fans).set_level(0.27); //set the speed level between 0 and 1 https://esphome.io/components/output/index.html
+                 id(dac_output_fans).set_level(0.35); //set the speed level between 0 and 1 https://esphome.io/components/output/index.html
                 }
                 else
                 {
-                  if (((temp_measured) >=25) && ((temp_measured) < 27))
+                  if ((temp_measured) >=23)
                   {
-                    id(dac_output_fans).set_level(0.25);
+                    id(dac_output_fans).set_level(0.3);
                   }
                   else
                   {
-                    if  ((temp_measured) <= 24)
+                    if  ((temp_measured) <= 20)
                     {
                       id(dac_output_fans).turn_off();
                       //id(dac_output_fans).publish_state(0);
