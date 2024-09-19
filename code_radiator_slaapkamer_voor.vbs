@@ -16,6 +16,7 @@ logger:
 api:
 
 ota:
+  platform: esphome
   password: "04c2045637334d46a6778dbe4d0d45a7"
 
 wifi:
